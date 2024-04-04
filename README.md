@@ -1,64 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Dentro ou Fora
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Bem-vindo ao "Dentro ou Fora"! Este é um projeto de jogo onde os usuários podem criar e participar de jogos com pessoas, onde cada pessoa deve escolher se ela fica dentro ou fora. Este README fornecerá uma visão geral do projeto e como você pode começar a utilizá-lo.
 
-## About Laravel
+## Funcionalidades
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Criar um jogo: Os usuários podem criar um novo jogo, definindo os participantes e as opções "dentro" e "fora".
+- Encerrar jogo: Os criadores dos jogos podem encerrar um jogo criado por eles a qualquer momento.
+- Votar em novos jogos: Os usuários podem participar de jogos criados por outros usuários, votando se as pessoas listadas devem ficar dentro ou fora.
+- Compartilhar votações: Os resultados das votações podem ser compartilhados nas redes sociais ou com outros usuários.
+- Cadastro de usuários: Os usuários podem se cadastrar para criar jogos e participar das votações.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologias Utilizadas
+Este projeto foi desenvolvido utilizando o framework Laravel para o backend e o framework Bootstrap para a construção do frontend.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Como Iniciar
 
-## Learning Laravel
+Clone o Repositório: Clone este repositório para o seu ambiente local utilizando o seguinte comando:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```bash
+git clone https://github.com/seu-usuario/dentro-ou-fora.git
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Instale as Dependências: Navegue até o diretório clonado e instale as dependências do projeto utilizando o Composer:
+```bash
+cd dentro-ou-fora
+composer install
+```
+Configure o Banco de Dados: Renomeie o arquivo .env.example para .env e configure suas credenciais de banco de dados.
 
-## Laravel Sponsors
+Execute as Migrações: Execute as migrações do banco de dados para criar as tabelas necessárias:
+```bash
+php artisan migrate
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Inicie o Servidor de Desenvolvimento: Inicie o servidor de desenvolvimento do Laravel:
+```bash
+php artisan serve
+```
 
-### Premium Partners
+Acesse o Aplicativo: Abra o navegador e acesse http://localhost:8000 para começar a usar o aplicativo "Dentro ou Fora".
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Contribuindo
 
-## Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Please make sure to update tests as appropriate.
